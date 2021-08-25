@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+    th, td {
+        border: 1px solid;
+        border-radius: 5px;
+        width: 30%;
+        height: 50px;
+        padding: 10px;
+    }
+    th {
+        background-color: #CCCCCC;
+        font-weight: bold;
+    }
+    td {
+        background-color: #E8E8E8;
+    }
+</style>
+
+<h1>Menu</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Available for delivery?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Hot chips</td>
+            <td>$4.00</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Burger</td>
+            <td>$8.00</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Fish of the day</td>
+            <td>$10.00</td>
+            <td>No</td>
+        </tr>
+    </tbody> 
+</table>
+{% endblock %}
