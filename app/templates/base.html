@@ -1,10 +1,67 @@
 <!DOCTYPE html>
 <html>
+    <style>
+
+        body{
+            background-color: black;
+        }
+
+        h1, p, a{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+            margin: 10px;
+        }
+
+        h1 {
+            margin-top: 30px;
+            font-size: 150%;
+        }
+
+        a {
+            font-size: 120%;
+            padding: 10px;
+            text-decoration: none;
+            color: rgb(83, 240, 83);
+        }
+        a:hover {
+            color: rgb(206, 241, 206);
+        }
+
+        p {
+            color: rgb(206, 241, 206);
+        }
+
+        th, td {
+            border: 1px solid;
+            border-radius: 5px;
+            width: 30%;
+            height: 50px;
+            padding: 10px;
+        }
+
+        th {
+            background-color: rgb(83, 240, 83);
+            font-weight: bold;
+        }
+
+        td {
+            background-color: rgb(206, 241, 206);
+        }
+
+        .heading{
+            font-size: 300%;
+            margin: 10px;
+            color: white;
+        }
+
+    </style>
+
     <head>
         <title>{{ title }} - The Takeaway Shop</title>
     </head>
+
     <body>
-        <p>The Takeaway Shop</p>
+        <p class="heading">The Takeaway Shop</p>
         <a href="{{ url_for('index') }}">Home</a>
         <a href="{{ url_for('menu') }}">Menu</a>
         <a href="{{ url_for('orders') }}">Orders</a>
@@ -12,4 +69,5 @@
         {% block content %}
         {% endblock %}
     </body>
+
 </html>
